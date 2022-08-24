@@ -1,0 +1,90 @@
+
+
+.tooltipss .bottom {
+    min-width:200px; 
+    top:50px;
+    left:50%;
+    transform:translate(-50%, 0);
+    padding:10px 20px;
+    color:#ffffff;
+    background-color:#014423;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    visibility:hidden; opacity:0; transition:opacity 0.8s;
+    text-align: center;
+}
+
+.tooltipss:hover .bottom {
+    visibility:visible; opacity:1;
+}
+
+.tooltipss .bottom i {
+    position:absolute;
+    bottom:100%;
+    left:50%;
+    margin-left:-12px;
+    width:24px;
+    height:12px;
+    overflow:hidden;
+}
+
+.tooltipss .bottom i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:50%;
+    transform:translate(-50%,50%) rotate(45deg);
+    background-color:#014423;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+.tooltipss .right {
+    min-width:200px; 
+    top:50%;
+    left:100%;
+    margin-left:20px;
+    transform:translate(0, -50%);
+    padding:10px 20px;
+    color:#ffffff;
+    background-color:#014423;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+
+.tooltipss:hover .right {
+    visibility:visible; opacity:1;
+}
+
+.tooltipss .right i {
+    position:absolute;
+    top:50%;
+    right:100%;
+    margin-top:-12px;
+    width:12px;
+    height:24px;
+    overflow:hidden;
+}
+
+.tooltipss .right i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:0;
+    top:50%;
+    transform:translate(50%,-50%) rotate(-45deg);
+    background-color:#014423;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
